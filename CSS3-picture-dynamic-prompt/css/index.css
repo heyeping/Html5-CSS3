@@ -1,0 +1,391 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+figure{
+	position: relative;
+	width: 33.333%;
+	height: 350px;
+	overflow: hidden;
+	float: left;
+}
+
+figure img{
+	opacity: 0.8;
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s
+	-o-transition：all 0.1s;
+	-ms-transition：all 0.1s;
+}
+
+figure figcaption p,h2,span,div{
+	transition: all 0.35s;
+	-webkit-transition: all 0.35s;
+	-moz-transition: all 0.35s
+	-o-transition：all 0.35s;
+	-ms-transition：all 0.35s;
+}
+
+figcaption{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	color: #ffffff;
+	font-family: "微软雅黑";
+}
+
+/*媒体查询*/
+@media screen and (max-width: 600px) {
+	figure{
+		width: 100%;
+	}
+}/*figure的宽度小于500px 图片100%显示*/
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+	figure{
+		width: 50%;
+	}
+}/*figure的宽度大于601px小于1000px 图片50%显示*/
+
+@media screen and (min-width: 1001px) {
+	figure{
+		width: 33.333%;
+	}
+}/*figure的宽度大于1001px 图片33.333%显示*/
+
+.test1{
+	background: #2F0000;
+}
+.test1 figcaption p{
+	background: #FFFFFF;
+	color: #333;
+	margin: 5px;
+	text-align: center;
+	transform: translate(-150px,0px);
+}
+.test1 figcaption p:nth-of-type(1){
+	transition-delay: 0.05s;
+}
+.test1 figcaption p:nth-of-type(2){
+	transition-delay: 0.1s;
+}
+.test1 figcaption p:nth-of-type(3){
+	transition-delay: 0.15s;
+}
+.test1 figcaption{
+	padding: 20px;
+}
+.test1:hover figcaption p{
+	transform: translate(0px,0px);
+}
+.test1:hover img{
+	transform: translate(-50px,0px);
+	opacity: 0.5;
+}
+
+.test2{
+	background: #030;
+}
+.test2 figcaption{
+	width: 100%;
+	height: 100%;
+}
+.test2 figcaption div{
+	border: 2px solid #ffffff;
+	width: 80%;
+	height: 80%;
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	transform: translate(0px,-350px) rotate(0deg);
+}
+.test2 figcaption h2{
+	margin-top: 15%;
+	margin-left: 15%;
+}
+.test2 figcaption p{
+	margin-left: 15%;
+	transform: translate(0px,50px);
+	opacity: 0;
+}
+.test2:hover figcaption div{
+	transform: translate(0px,0px) rotate(360deg);
+}
+.test2:hover img{
+	opacity: 0.5;
+}
+.test2:hover figcaption p{
+	transform: translate(0pc,0px);
+	opacity: 1;
+}
+
+.test3{
+	background: #000;
+}
+.test3 figcaption{
+	top: 30%;
+	left: 15%;
+}
+.test3 figcaption h2{
+	transform: skew(90deg);
+}
+.test3 figcaption p{
+	transform: skew(90deg);
+	transition-delay: 0.1s;
+}
+.test3:hover img{
+	opacity: 0.5;
+}
+.test3:hover figcaption h2{
+	transform: skew(0deg);
+}
+.test3:hover figcaption p{
+	transform: skew(0deg);
+}
+
+.test4{
+	background: #000;
+}
+.test4 figcaption{
+	width: 100%;
+	height: 100%;
+}
+.test4 figcaption h2{
+	margin-top: 15%;
+	margin-left: 20%;
+	transform: scale(1.2,1.2);
+	opacity: 0;
+}
+.test4 figcaption p{
+	margin-left: 15%;
+	transform: scale(1.2,1.2);
+	opacity: 0;
+}
+.test4 figcaption div{
+	border: 2px solid #ffffff;
+	width: 80%;
+	height: 80%;
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	transform: scale(1.2,1.2);
+	opacity: 0;
+}
+.test4:hover figcaption div{
+	opacity: 1;
+	transform: scale(1,1);
+}
+.test4:hover img{
+	opacity: 0.5;
+	transform: scale(1.2,1.2);
+}
+.test4:hover figcaption h2{
+	transform: sscale(1,1);
+	opacity: 1;
+}
+.test4:hover figcaption p{
+	transform: scale(1,1);
+	opacity: 1;
+}
+
+.test5 {
+	background: #000;
+}
+.test5 figcaption {
+	width: 100%;
+	height: 100%;
+}
+.test5 figcaption div {
+	background: #fff;
+	width: 130%;
+	height: 100%;
+	position: absolute;
+	transform: translate(0, 350px) rotate(0deg);
+	-webkit-transform: translate(0, 350px) rotate(0deg);
+	-moz-transform: translate(0, 350px) rotate(0deg);
+	-o-transform: translate(0, 350px) rotate(0deg);
+	-ms-transform: translate(0, 350px) rotate(0deg);
+	transform-origin: 0 0;
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	-o-transform-origin: 0 0;
+	-ms-transform-origin: 0 0;
+	opacity: 0.5;
+}
+.test5:hover figcaption div {
+	transform: translate(0, 350px) rotate(-15deg);
+	-webkit-transform: translate(0, 350px) rotate(-15deg);
+	-moz-transform: translate(0, 350px) rotate(-15deg);
+	-o-transform: translate(0, 350px) rotate(-15deg);
+	-ms-transform: translate(0, 350px) rotate(-15deg);
+	opacity: 0.9;
+}
+.test5:hover img {
+	opacity: 0.5;
+	transform: translate(0, -10px);
+	-webkit-transform: translate(0, -10px);
+	-moz-transform: translate(0, -10px);
+	-o-transform: translate(0, -10px);
+	-ms-transform: translate(0, -10px);
+}
+.test5 figcaption h2 {
+	margin: 15% 0 0 10%;
+	transform: translate(0, 50px);
+	-webkit-transform: translate(0, 50px);
+	-moz-transform: translate(0, 50px);
+	-o-transform: translate(0, 50px);
+	-ms-transform: translate(0, 50px);
+	opacity: 0;
+	position: absolute;
+}
+.test5 figcaption p {
+	margin-top: 300px;
+	margin-left: 80%;
+	transform: translate(0, 50px);
+	opacity: 0;
+	color: #000;
+	position: absolute;
+	z-index: 9999;
+}
+.test5:hover figcaption h2 {
+	transform: translate(0, 0);
+	-webkit-transform: translate(0, 0);
+	-moz-transform: translate(0, 0);
+	-o-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	opacity: 1;
+	transition-delay: 0.2s;
+	-webkit-transition-delay: 0.2s;
+	-moz-transition-delay: 0.2s;
+	-o-transition-delay: 0.2s;
+	-ms-transition-delay: 0.2s;
+}
+.test5:hover figcaption p {
+	transform: translate(0, 0);
+	-webkit-transform: translate(0, 0);
+	-moz-transform: translate(0, 0);
+	-o-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	opacity: 1;
+	transition-delay: 0.3s;
+	-webkit-transition-delay: 0.3s;
+	-moz-transition-delay: 0.3s;
+	-ms-transition-delay: 0.3s;
+	-o-transition-delay: 0.3s;
+}
+
+.test6 {
+	background: #000;
+}
+.test6 figcaption {
+	width: 100%;
+	height: 100%;
+}
+.test6 figcaption div.line1 {
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	width: 80%;
+	height: 90%;
+	left: 10%;
+	top: 5%;
+	position: absolute;
+	transform: scale(1, 0);
+	-webkit-transform: scale(1, 0);
+	-moz-transform: scale(1, 0);
+	-ms-transform: scale(1, 0);
+	-o-transform: scale(1, 0);
+	opacity: 0;
+}
+.test6 figcaption div.line2 {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	width: 90%;
+	height: 80%;
+	left: 5%;
+	top: 10%;
+	position: absolute;
+	transform: scale(0, 1);
+	-webkit-transform: scale(0, 1);
+	-ms-transform: scale(0, 1);
+	-moz-transform: scale(0, 1);
+	-o-transform: scale(0, 1);
+	opacity: 0;
+}
+.test6:hover figcaption div.line1 {
+	transform: scale(1, 1);
+	-webkit-transform: scale(1, 1);
+	-moz-transform: scale(1, 1);
+	-o-transform: scale(1, 1);
+	-ms-transform: scale(1, 1);
+	opacity: 1;
+}
+.test6:hover figcaption div.line2 {
+	transform: scale(1, 1);
+	-webkit-transform: scale(1, 1);
+	-ms-transform: scale(1, 1);
+	-moz-transform: scale(1, 1);
+	-o-transform: scale(1, 1);
+	opacity: 1;
+}
+.test6 figcaption h2 {
+	margin: 15% 0 0 15%;
+	transform: scale(0.8, 0.8);
+	-webkit-transform: scale(0.8, 0.8);
+	-ms-transform: scale(0.8, 0.8);
+	-moz-transform: scale(0.8, 0.8);
+	-o-transform: scale(0.8, 0.8);
+	opacity: 0;
+}
+.test6 figcaption p {
+	margin: 2% 0 0 15%;
+	transform: scale(0.8, 0.8);
+	-webkit-transform: scale(0.8, 0.8);
+	-moz-transform: scale(0.8, 0.8);
+	-o-transform: scale(0.8, 0.8);
+	-ms-transform: scale(0.8, 0.8);
+	opacity: 0;
+}
+.test6:hover figcaption h2 {
+	transform: scale(1, 1);
+	-webkit-transform: scale(1, 1);
+	-moz-transform: scale(1, 1);
+	-o-transform: scale(1, 1);
+	-ms-transform: scale(1, 1);
+	opacity: 1;
+	transition-delay: 0.2s;
+	-webkit-transition-delay: 0.2s;
+	-moz-transition-delay: 0.2s;
+	-o-transition-delay: 0.2s;
+	-ms-transition-delay: 0.2s;
+}
+.test6:hover figcaption p {
+	transform: scale(1, 1);
+	-webkit-transform: scale(1, 1);
+	-moz-transform: scale(1, 1);
+	-o-transform: scale(1, 1);
+	-ms-transform: scale(1, 1);
+	opacity: 1;
+	transition-delay: 0.3s;
+	-webkit-transition-delay: 0.3s;
+	-moz-transition-delay: 0.3s;
+	-o-transition-delay: 0.3s;
+	-ms-transition-delay: 0.3s;
+}
+.test6 img {
+	transform: scale(1.1, 1.1);
+	-webkit-transform: scale(1.1, 1.1);
+	-ms-transform: scale(1.1, 1.1);
+	-moz-transform: scale(1.1, 1.1);
+	-o-transform: scale(1.1, 1.1);
+	opacity: 1;
+}
+.test6:hover img {
+	transform: scale(1, 1);
+	-webkit-transform: scale(1, 1);
+	-ms-transform: scale(1, 1);
+	-moz-transform: scale(1, 1);
+	-o-transform: scale(1, 1);
+	opacity: 0.5;
+}
