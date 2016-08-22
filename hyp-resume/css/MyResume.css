@@ -1,0 +1,242 @@
+@font-face {
+	font-family: 方正清刻本悦宋简体;
+	src:url('../fonts/方正清刻本悦宋简体.TTF') format('truetype');
+	} 
+body a{
+    transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+input[type="button"]{
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+
+h1,h2,h3,h4,h5,h6{
+	padding:0 0;
+	margin:0 0;
+	font-weight: 700;
+}
+p{
+	padding:0 0;
+	margin:0 0;
+	font-weight: 600;
+}
+ul{
+	padding:0 0;
+	margin:0 0;	
+}
+body{
+	padding:0 0;
+	margin:0 0; 
+	font-family:方正清刻本悦宋简体;
+}
+hr {
+	height: 4px;
+	width: 70px;
+	text-align: center;
+	position: relative;
+	background: #E87E04;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	border: 0;
+}
+.header-section {
+    background: #deecdf;
+    text-align: center;
+    min-height: 500px;
+}
+
+.header-section h1{
+	font-size:3em;
+	color: #2c3e50;
+	padding: 0.5em 2em;
+	margin-top: 415px;
+}
+.header-section span {
+    color: #E87E04;
+    font-size: 1em;
+}
+.header-section p{
+	font-size: 1.5em;
+	color: #2c3e50;
+}
+span.glyphicon.glyphicon-triangle-bottom {
+    font-size: 2em;
+    color: #fff;
+    background-color: #2c3e50;
+    padding: 0.5em 2em;
+    border-radius: 5px 5px 0 0;
+    margin-top: 2.5em;
+}
+.information-section{
+	padding: 3em 0;
+}
+.information-section span{
+	color: #E87E04;
+    font-size: 2em;
+}
+.information-section h3{
+	font-size: 2.2em;
+	color: #2c3e50;
+	text-align: center;
+	margin-bottom: 0.6em;
+}
+.information-grid p{
+	font-size: 1.5em;
+	margin-left: 8em;
+	color: #2c3e50;
+}
+.job-section{
+	padding: 3em 0;
+	background: #F4F5F6;
+}
+.job-section h3{
+	font-size: 2.2em;
+	color: #2c3e50;
+	text-align: center;
+	margin-bottom: 0.6em;
+}
+.job-section p{
+	margin-top: 10px;
+	font-size: 1.5em;
+	margin-left: 8em;
+	color: #2c3e50;
+}
+.job-grid span{
+	color: #E87E04;
+    font-size: 2em;
+}
+.evaluate-section{
+	padding: 3em 0;
+}
+.evaluate-section h3{
+	font-size: 2.2em;
+	color: #2c3e50;
+	text-align: center;
+	margin-bottom: 0.6em;
+}
+.evaluate-section #img {
+	width:200px; 
+	height:200px;
+    border-radius:50%; 
+    overflow:hidden;
+}
+.evaluate-section .text-body p{
+	margin-top: 30px;
+	font-size: 20px;
+	color: #2C3E50;
+	text-indent: 2em;
+}
+.percent {
+	display: inline-block;
+	font-size: 21px;
+	color: #474d5d;
+	line-height: 152px;
+	z-index: 2;
+}
+.percent:after {
+	content: '%';
+	margin-left: 0.1em;
+	font-size: .8em;
+}
+.language-section{
+	margin-top: 10px;
+	
+}
+.language-section h2{
+	margin-top: 20px;
+	color: #2c3e50;
+	text-align: center;
+	margin-bottom: 0.9em;
+}
+.language-grid .study2{
+	margin-left: 10px;
+	margin-top: 20px;
+}
+.study2 h4{
+	font-size: 1.6em;
+	color: #2c3e50;
+}
+.study2 h5{
+	margin-top: 20px;
+	color: #2C3E50;
+}
+
+.progress-bar-success {
+    background-color: #F7E1B5;
+}
+.progress-bar-info {
+    background-color: #ACB5B8;
+}
+.progress-bar-warning {
+    background-color: #78B3AE;
+}
+.progress-bar-danger{
+	background-color: #8C9D82;
+}
+.study-grid h4{
+	font-size: 1.4em;
+	text-transform: capitalize;
+	color: rgb(29, 26, 26);
+	padding-bottom: 0.2em;
+	/*.copyrights{
+	    text-indent:-9999px;
+	    height:0;
+	    line-height:0;
+	    font-size:0;
+	    overflow:hidden;
+	}*/
+}
+#skills h2{
+	margin-bottom: 0.9em;
+}
+#resume h2{
+	margin-bottom: 0.9em;
+}
+#achievements h2{
+	margin-bottom: 0.9em;
+}
+#portfolio h2{
+	margin-bottom: 0.9em;
+}
+.footer-section{
+	padding:2em 0;
+	text-align:center;
+	background: #deecdf;
+}
+.footer-top p {
+	font-size: 1.3em;
+	color: #1B1B1B;
+	font-weight: 400;
+}
+.footer-top  a {
+	font-size: 1.5em;
+	color:#1B1B1B;
+	font-weight: 400;
+	text-transform: capitalize;
+}
+.footer-top a:hover {
+	color: #1B1B1B;
+}
+.footer-top a {
+	margin: 0 6px 0 6px;
+}
+#toTop {
+	display: none;
+	text-decoration: none;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	overflow: hidden;
+	width: 48px;
+	height: 48px;
+	border: none;
+	text-indent: 100%;
+	background: url("../img/to-top2.png") no-repeat 0px 0px;
+}
