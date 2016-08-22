@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#move{
+			width: 430px;
+			height: 250px;
+			margin: 10px auto;
+			border: 1px solid #ccc;
+		}
+		#move a{
+			display: inline-block;
+			width: 100px;
+			height: 50px;
+			border: 1px solid #ddd;
+			border-radius: 3px;
+			background: #ccc;
+			text-align: center;
+			margin: 10px 17px;
+			position: relative;
+			padding-top: 40px;
+			color: #9c9c9c;
+			font-size: 12px;
+			text-decoration: none;
+			line-height: 50px;
+			overflow: hidden;
+		}
+		#move a i{
+			position: absolute;
+			top: 20px;
+			left: 0;
+			display: inline-block;
+			width: 100%;
+			text-align: center;
+			fliter: alpha(opacity = 100);
+			opacity: 1;
+		}
+		#move a:hover{
+			color: #f00;
+		}
+		#move img{
+			width: 30px;
+		}
+		</style>
+		<script type="text/javascript" src="js/move.js"></script>
+		<script type="text/javascript">
+			window.onload = function(){
+				var oMove = document.getElementById('move');
+				var aList = oMove.getElementsByTagName('a');
+				for (var i = 0; i < aList.length; i++){
+					aList[i].onmouseover = function(){
+						var _this = this.getElementsByTagName('i')[0];
+						startMove(_this,{top:-20,opacity:0},function(){
+							_this.style.top = 30 + 'px';
+							startMove(_this,{top:20,opacity:100});
+						});
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="move">
+			<a href="#"><i><img src="img/1.png"></i><p>顶部</p></a>
+			<a href="#"><i><img src="img/2.png"></i><p>举报</p></a>
+			<a href="#"><i><img src="img/3.png"></i><p>热门</p></a>
+			<a href="#"><i><img src="img/4.png"></i><p>搜索</p></a>
+			<a href="#"><i><img src="img/5.png"></i><p>危险</p></a>
+			<a href="#"><i><img src="img/4.png"></i><p>搜索</p></a>
+		</div>
+	</body>
+</html>

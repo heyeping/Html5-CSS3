@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		a{
+			color: #07111B;
+			text-decoration: none;
+		}
+		.course-wrap{
+			float: left;
+			margin: 10px;
+			background-color: #fff;
+			-webkit-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1); 
+			-moz-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1); 
+			box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1); 
+			position: relative;
+		}
+		.course-wrap .course-box{
+			width: 224px;
+			height: 172px;
+			box-sizing:border-box;
+			-webkit-box-sizing:border-box;
+			-moz-box-sizing:border-box;
+			overflow: hidden;
+			position: relative;
+		}
+		.course-wrap .course-box .course-intro{
+			position: absolute;
+			padding: 0 20px;
+			transition: top .5s;
+			top: 90px;
+			height: 144px;
+			width: 184px;
+			background-color: #fff;
+		}
+		.course-wrap-hover{
+			top: 30px!important;
+		}
+		.course-wrap .course-box .course-intro h3{
+			margin: 0;
+			padding: 16px 0 16px;
+			font-size: 14px;
+			max-height: 40px;
+			overflow: hidden;
+			color: #07111b;
+			line-height: 21px;
+		}
+		.course-wrap .course-box .course-intro h3 i{
+			float: left;
+			margin-top: 2px;
+			margin-right: 4px;
+			padding: 2px;
+			font-style: normal;
+			font-size: 12px;
+			color: #fff;
+			line-height: 12px;
+			border-radius: 1px;
+			background-color: #93999f;
+		}
+		.course-wrap .course-box .course-intro p{
+			color: #93999f;
+			font-size: 12px;
+			height: 40px;
+			overflow: hidden;
+			line-height: 20px;
+		}
+		.course-wrap .course-box .course-bottom{
+			position: absolute;
+			padding: 0 20px;
+			bottom: 0;
+			width: 184px;
+			height: 42px;
+			background-color: #fff;
+			color: #93999f;
+			font-size: 12px;
+			line-height: 36px;
+		}
+		.course-wrap .course-box:hover .course0intro{
+			top: 28px;
+		}
+		.course-wrap:hover{
+			-webkit-box-shadow: 0 5px 20px rgba(0,0,0,0.3) !important;
+			-moz-box-shadow: 0 5px 20px rgba(0,0,0,0.3) !important;
+			box-shadow: 0 5px 20px rgba(0,0,0,0.3) !important;
+		}
+		</style>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$('.course-wrap').hover(function(){
+				$(this).children('a').children('.course-box').children('.course-intro').addClass('course-wrap-hover');
+			},function(){
+				$(this).children('a').children('.course-box').children('.course-intro').removeClass('course-wrap-hover');
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<div class="course-wrap">
+			<a href="#">
+				<div class="course-box">
+					<img src="images/1.jpg" >
+					<div class="course-intro">
+						<h3><i>高</i>基于SSH实现员工管理系统之框架整合篇！</h3>
+						<p>SSH框架整合案例之整合篇！</p>
+					</div>
+					<div class="course-bottom">
+						<span class="study-people">373人在学</span>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="course-wrap">
+			<a href="#">
+				<div class="course-box">
+					<img src="images/1.jpg" >
+					<div class="course-intro">
+						<h3><i>高</i>基于SSH实现员工管理系统之框架整合篇！</h3>
+						<p>SSH框架整合案例之整合篇！</p>
+					</div>
+					<div class="course-bottom">
+						<span class="study-people">373人在学</span>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="course-wrap">
+			<a href="#">
+				<div class="course-box">
+					<img src="images/1.jpg" >
+					<div class="course-intro">
+						<h3><i>高</i>基于SSH实现员工管理系统之框架整合篇！</h3>
+						<p>SSH框架整合案例之整合篇！</p>
+					</div>
+					<div class="course-bottom">
+						<span class="study-people">373人在学</span>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="course-wrap">
+			<a href="#">
+				<div class="course-box">
+					<img src="images/1.jpg" >
+					<div class="course-intro">
+						<h3><i>高</i>基于SSH实现员工管理系统之框架整合篇！</h3>
+						<p>SSH框架整合案例之整合篇！</p>
+					</div>
+					<div class="course-bottom">
+						<span class="study-people">373人在学</span>
+					</div>
+				</div>
+			</a>
+		</div>
+	</body>
+</html>
