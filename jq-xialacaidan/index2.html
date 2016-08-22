@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/font-awesome-4.6.3/css/font-awesome.min.css" />
+		<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0; 
+		}
+		.container{
+			margin: 30px auto 0 auto;
+			width: 300px;
+		}
+		.container a,.container a:link{
+			text-decoration: none;
+		}
+		.vtitle{
+			width: 100%;
+			height: 50px;
+			line-height: 50px;
+			background-color: #63CEB5;
+			color: #ffffff;
+			font-size: 18px;
+			padding-left: 20px;
+		}
+		.vtitle:hover{
+			background-color: #1CA664; 
+		}
+		.vtitle i{
+			float: right;
+			padding: 10px 20px;
+			font-size: 30px;
+		}
+		.vcon{
+			display: none;
+			width: 320px;
+		}
+		.vcon ul{
+			list-style: none;
+		}
+		.vcon ul li{
+			width: 100%;
+			height: 45px;
+			background-color: #F7EA95;
+			color: #ffffff;
+			line-height: 45px;
+			font-size: 16px;
+			border-bottom: 1px solid #DCDCDC;
+		}
+		.vcon ul li p{
+			margin-left: 20px;
+		}
+		.vcon ul li:hover{
+			background: #D6791C;
+		}
+		.vconshow{
+			display: block;
+		}
+		</style>
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				var Vtitle=$(".vtitle");
+				Vtitle.hover(function(){
+					Vtitle.siblings().children("ul").css("display","none");
+					this.children("ul").css("display","block");
+					},function(){
+					this.children("ul").css("display","none");
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<a href="#"><div class="vtitle">下拉菜单1<i class="fa fa-angle-down" aria-hidden="true"></i></div></a>
+			<div class="vcon vconshow">
+				<ul>
+					<li><p>我是he</p></li>
+					<li><p>点我吧</p></li>
+					<li><p>哈哈哈哈</p></li>
+					<li><p>好吧汗</p></li>
+				</ul>
+			</div>
+			<a href="#"><div class="vtitle">下拉菜单2<i class="fa fa-angle-right" aria-hidden="true"></i></div></a>
+			<div class="vcon">
+				<ul>
+					<li><p>你是sb</p></li>
+					<li><p>我怕不是</p></li>
+					<li><p>你就是</p></li>
+					<li><p>好笑吗</p></li>
+				</ul>
+			</div>
+			<a href="#"><div class="vtitle">下拉菜单3<i class="fa fa-angle-right" aria-hidden="true"></i></div></a>
+			<div class="vcon">
+				<ul>
+					<li><p>哈哈哈哈</p></li>
+					<li><p>我就是逗比</p></li>
+					<li><p>随你吧</p></li>
+					<li><p>好了</p></li>
+				</ul>
+			</div>
+			<a href="#"><div class="vtitle">下拉菜单4<i class="fa fa-angle-right" aria-hidden="true"></i></div></a>
+			<div class="vcon">
+				<ul>
+					<li><p>正经点</p></li>
+					<li><p>来了</p></li>
+					<li><p>我要放大招</p></li>
+					<li><p>等着</p></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
