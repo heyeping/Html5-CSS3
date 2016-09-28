@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			/*@keyframes(关键帧)，前缀webkit表示这个动画效果只适用于webkit
+			 * 内核的浏览器，ratate、投票、bottom就是这个动画里关键帧的名字*/
+			@-webkit-keyframes  ratate{
+				from{-webkit-transform: rotate(0deg);}
+				to{-webkit-transform: rotate(360deg);}
+			}
+			/*从0到360度旋转*/
+			@-webkit-keyframes top{
+				from{top: 0;}
+				to{top: -20%;}
+				/*蓝色小球垂直位移从0到20%*/
+			}
+			
+			@-webkit-keyframes bottom{
+				from{bottom: 0;}
+				to{bottom: -20%;}
+			}
+			
+			body{
+				background: #333;
+				overflow: hidden;
+			}
+			
+			#container{
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				width: 120px;
+				height: 120px;
+				margin: -50px 0 0 -50px;
+				-webkit-animation: ratate linear 3.2s infinite;
+			}
+			.sphere{
+				position: absolute;
+			}
+			#container:before{
+				top: 0;
+				border-radius: 30px 30px 30px 30px;
+				background: skyblue;
+				content: '';
+				position: absolute;
+				left: 25%;
+				height: 50%;
+				width: 50%;	
+			}
+			#container:after{
+				bottom: 0;
+				border-radius: 30px 30px 30px 30px;
+				background: tomato;
+				content: '';
+				position: absolute;
+				left: 25%;
+				width: 50%;
+				height: 50%;
+				infinite;
+				-webkit-animation: bottom ease .8s alternate infinite;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div class="sphere s-1"></div>
+		</div>
+	</body>
+</html>
